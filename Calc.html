@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Finding a Percentage of a Number:</h1><br>
+<p>
+  <label>Number:</label>
+  <input id="inputFahrenheit" type="number" placeholder="Net Profit" oninput="netProfit(this.value)" onchange="netProfit(this.value)">
+  <br>
+</p>
+<p>Percentage (To be multiplied by 100...): <span id="outputNumber"></span></p>
+
+<script>
+function netProfit(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputNumber").innerHTML=(valNum/100);
+}
+</script>
+
+</body>
+</html>

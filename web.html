@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+  <title>Business Studies @ St. Joseph's Secondary School Rush</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added in extra information to set-up our website formally-->
+  <link rel="icon" href="http://m.img.brothersoft.com/win8/32/324f2f9e-bf79-46b8-85e4-ef5379829f58_icon.png"> <!-- This is how we add taskbar icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- These are the sources of Stylesheets forthe HTMl we are using -->
+ <!-- This is the styling for our images, body, text, nav bar and tables -->
+		
+	<!-- This also helps the navbar on our website to operate; this links with the sources in the header of our HTML code -->	
+	
+	<style TYPE="text/css">
+	
+		/* * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+		
+*/
+		
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+			
+		
+		button {
+		color: black;
+		}
+	
+		img { 
+		position: static;		    
+		}
+		
+		img:hover {
+    		transform: scale(1.2); 
+		    }
+			
+		#img {
+		align: middle;
+		position: static;
+		     }
+
+ 	img.round {
+border: 2px solid white;
+border-radius: 14px;
+align: middle;
+position: static;
+    		}
+  
+		body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+      background-color: black;
+  		}
+		
+	  h3 {
+	font-size: 38px
+	font-family: Montserrat;	
+		}
+		
+	  h1 {
+	font-size: 50px
+	font-family: Montserrat;	
+		}
+		
+  	p {
+	font-size: 18px;
+	font-family: Montserrat;	/* Text Settings */
+		}
+	  
+	  ul {  
+	font-size: 23px;
+	text-align: center;
+	font-style: italic;
+	font-family: Montserrat;	  
+		}			/* Settings for the the List */
+		
+  	.margin {
+	  margin-bottom: 45px;   /* Add Formatting */
+		}
+		
+  		.bg-1 { 
+      background-color: #7B71D0; /* Light Purple */
+      color: #ffffff;
+  }
+  		.bg-2 { 
+      background-color: #482877; /* Dark Purple */
+      color: #ffffff;
+  }
+  		.bg-3 { 
+      background-color: #1F5C56; /* Dark Green */
+      color: #ffffff;
+  }
+  		.bg-4 { 
+      background-color: #252F6F; /* Blue */
+      color: #ffffff;
+  }
+		
+		.bg-5 { 
+      background-color: #5f86c6; /* Medium Blue */
+      color: #ffffff;
+  }
+		
+		.bg-6 { 
+      background-color: #1d54ad; /* Dark Blue */
+      color: #ffffff;
+  }
+		
+		.bg-7 { 
+      background-color: #133872  ; /* Darker Blue */
+      color: #ffffff;
+  }
+		
+  .container-fluid {     
+      padding-top: 70px;
+      padding-bottom: 70px;   /* This is the formatting of our Dividers and Sections */
+  }
+
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      position: fixed;
+      width: 100%;
+  }
+				
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+		
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #256fe8;
+}
+		
+a.nav-link:link
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+		
+a.nav-link:visited
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+		
+a.nav-link:hover
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+		
+a.nav-link:active
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+   a:link, a:visited, a:hover, a:active { 
+	   color: #ffffff;
+           text-decoration: none; 
+	   font-size: 22px;
+     }
+		
+		#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+		
+select {
+	color: black;
+		}
+		
+  </style>
+	<!-- Very important CSS styling that ensures that the scale and responsive factors ofour website are correct -->
+	<!-- We have also added in a lot of design for our div's, containers and overall page -->
+	<!-- We use the CSS Styling to use the correct settings, format, and colour scheme -->
+	<!-- We used the CSS to create differnet values of DIV and set-up the Nav Bar -->
+</head>
+	
+<body>
+
+<!-- Navigation Bar | Source Code for Format -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> <!-- The styling, dimensions, sizing and fit of the responsive pages-->
+	    <!-- This code formats the heading of the Navigation bar of the Website -->
+      <a class="navbar-brand" href="#">Business Studies</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">  <!-- In our Nav Bar we used some CSS to create local links -->
+        <li><a href="#why">WHY</a></li>
+        <li><a href="#how">HOW</a></li>
+	<li><a href="#course">COURSE</a></li>
+	<li><a href="#resource">RESOURCES</a></li>
+	<li><a href="#news">NEWS</a></li>
+        <li><a href="https://www.curriculumonline.ie/getmedia/a00357e9-fa82-4f60-99f7-adae882eeb67/FINAL-NCCA-Specification-for-Jr-Cycle-Business-Studies-v5.pdf">MORE</a></li>
+      </ul> <!-- Our list of Headings on the Nav Bar -->
+    </div>
+  </div>
+</nav>
+<!-- This whole section formats the Navigation, as well as CSS -->
+
+<!-- First Section -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin"></h3>
+<!-- This is the beginning of our section of resources and information about Business Studies in St. Joseph's -->
+<br>
+  <h3>What is Business Studies?</h3>
+  <br><img src="http://curriculumonline.ie/getmedia/f95e76e3-4850-4b1e-a380-ec08f58c45bf/Venn_2.jpg" class="img-responsive img-circle margin" style="display:inline" width="370" height="350">
+	
+	<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXm4vgep72cxY4tkmnWC-_BNTw-dMMdbpnEc1nz_G5O39KQcG3 -->
+ 	<!-- https://www.pwc.com/ca/en/consulting/assets/279822-consulting-behavioural-economics-animation-2.gif -->
+	
+	<p>
+  Junior Cycle Business Studies focuses on improving students’ understanding of the business environment and on developing skills for life, work and further study through the three inter-connected strands: Personal Finance , Enterprise and Our Economy .
+  </p>
+	<iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/6hKnslE9daM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<!-- Second Section -->
+<div class="container-fluid bg-2 text-center">
+<A NAME="why"></A>
+	<h3 class="margin">Why is it Important</h3>
+  <p>Young people are growing up in a globalised and dynamic world. New opportunities and challenges will emerge in their lifetimes that are virtually unimaginable today. Developing technologies, environmental and societal challenges, demographics, global competition and changing consumer demand will drive these changes. 
+	  Studying business helps to equip students with the understanding, skills and attitudes to participate fully in an interconnected world. <br>
+	  
+Business studies encourages students to develop an appreciation of how their lives are shaped by economic and social factors.  
+	  They are enabled to make informed decisions, to better manage their personal financial resources and to be adaptable, creative, and enterprising. Business studies also improves their knowledge and understanding of good business practice and of business as a productive activity.<br>
+
+Entrepreneurship enhances the quality of our collective and individual lives, often changing the way we work, communicate and live. Business studies provides an awareness, insight and positive attitude to entrepreneurship, demonstrating how it can improve our goods, services and institutions.
+<br>	  
+Business studies encourages students to develop skills for learning, skills for work and skills for life. It supports the development of analytical and critical thinking skills, encouraging students to be problem solvers. It reinforces the development of students’ numeracy, literacy and digital technology skills by providing a real-life context for their application. <br>
+Business studies explores the interdependence of economic prosperity, societal well-being and the environment and encourages students to think and act as responsible and ethical citizens. <br>
+	  They will be provided with a set of foundational skills, understandings and personal attributes, which will help them to engage with the dynamic business environment and fulfil their potential in their personal and professional lives, now and into the future. </p><br>
+<img class="round" src="https://curriculumonline.ie/getmedia/95485813-8c30-4aa0-a5a5-ff6a56eaae8c/Strands-image_1.jpg" width="500" height="377">
+
+</div>
+
+<!-- Third Section -->
+<div class="container-fluid bg-3 text-center">    
+<A NAME="how"></A>
+  <h3 class="margin">How we do It?</h3><br>
+  <img id="img" src="https://educate.ie/sites/default/files/styles/product_full/public/networkbundle2.png?itok=1MuALIPa" width="500" height="500"><br>
+  <!-- Fourth Row -->
+  <div class="row">
+    <div class="col-sm-4">
+ 
+      <p><strong>Personal Finance:</strong> <br>
+	Personal Finance focuses on students developing skills, knowledge and values that allows them to make informed decisions to effectively and responsibly manage their financial resources. 
+	      In this strand, students learn about managing their finances, responsible consumer behaviour and the value of using resources ethically and efficiently for the benefit of individuals and society.</p>
+	
+    </div>
+    <div class="col-sm-4"> 
+      <p><strong>Enterprise:</strong>  <br> Enterprise encourages students to identify opportunities and turn them into practical and targeted activities within business and wider society through the development and application of their understanding, skills and values. 
+	      In this strand, students learn about being enterprising, the functions of an organisation and the business environment.</p>
+     
+    </div>
+    <div class="col-sm-4"> 
+      <p><strong>Our Economy:</strong>  <br>  Our economy enables students to understand the dynamic relationship between the local, national and international economic situation. It develops students’ ability to identify and understand basic economic concepts as they relate to personal finance, enterprise and the Irish economy. 
+	      In this strand, students learn about the demand and supply of goods and services, the role of the government in managing the economy, and about economic issues such as trade, employment and Ireland’s membership of the European Union (EU).</p>
+     
+    </div>
+        <div class="col-sm-4"> 
+      <p><strong>Business Skills:</strong>  <br> This element broadens students’ understanding by enabling them to proactively apply their knowledge and skills to their own lives and in the dynamic business environment.</p>
+     
+    </div>
+        <div class="col-sm-4"> 
+      <p><strong>Exploring Business:</strong>  <br> This element focuses on the context for business, looking at the themes of globalisation, sustainable development and consumerism. It enables students to reflect on the interconnectedness of business to the economy, society and environment, and encourages them to be active and responsible.</p>
+     
+    </div>
+        <div class="col-sm-4"> 
+      <p><strong>Managing My Resources:</strong>  <br> Across the strands, the learning outcomes in this element focus on developing students’ awareness, knowledge and understanding of the fundamentals of personal finance, enterprise and economics.</p>
+      
+     
+    </div>
+	  <br><br>
+     <center><img class="round" src="https://goldfalconinc.org/wp-content/uploads/2016/05/Business-Image.jpg"  height="300" width="500">
+	    <br><br><br><img class="round" src="Business.PNG"  height="300" width="500"></center> <!-- Add in extra sections for text -->
+  </div>
+	<br>
+       <table>
+  <tr>
+    <th text-align: center;>Key Skills:</th>
+  </tr>
+  <tr>
+    <td>Being creative</td>
+  </tr>
+  <tr>
+    <td>Being literate</td>
+  </tr>
+  <tr>
+    <td>Being numerate</td>
+  </tr>
+  <tr>
+    <td>Communicating</td>
+  </tr>
+  <tr>
+    <td>Managing information and thinking</td>
+  </tr>
+  <tr>
+    <td>Managing myself</td>
+  </tr>
+   <tr>
+    <td>Staying well</td>
+  </tr>
+   <tr>
+    <td>Working with others/Teamwork</td>
+  </tr>
+</table>
+	<br><br>
+	<A NAME="course"></A>
+	  <img class="round" src="https://pbs.twimg.com/media/Cxplk6PWEAAhCVD.jpg" height="300" width="500"><br>
+	<br>
+	<h3>Learning Outcomes and Assessment:</h3>
+	<p>There are 37 learning outcomes across the three
+strands and teachers select learning outcomes from
+across the strands in first, second and third year.
+Learning outcomes describe the knowledge and
+understanding, skills and values that students
+should be able to demonstrate having studied
+Junior Cycle Business Studies.<br>The purpose of assessment and reporting at this
+stage of education is to support and improve
+learning. The junior cycle places a strong emphasis
+on assessment as part of the learning process and
+supports a more varied approach to assessment.
+Assessment in Junior Cycle Business Studies will
+optimise the opportunity for students to become
+reflective and active participants in their learning.
+The students will be supported through effective
+feedback that they will receive throughout their
+learning journey.<br> Assessment in Junior Cycle is designed to give a
+broader picture of student learning. In addition to
+the ongoing supportive feedback provided to
+progress student learning, there are a number of
+key assessment moments in second and third year.<br><strong>Classroom-Based Assessment 1:
+Business in Action</strong><br>
+Classroom-Based Assessment (CBA) 1 takes
+place at the end of second year and students
+have a four week period to complete this CBA.
+It is to be completed in groups of three to five
+students and there are three options available:
+Enterprise in Action, Economics in Action or
+Finance in Action.<br><strong>Classroom-Based Assessment 2:
+Presentation</strong><br>
+Junior Cycle Business Studies
+Information for Teachers
+The new specification for Business Studies has
+three interconnected strands.
+Personal Finance focuses on students making
+informed decisions to effectively and responsibly
+manage their financial resources.
+Enterprise encourages students to identify
+opportunities and develops an understanding of
+the financial, marketing and operational functions
+of an organisation.
+Our Economy enables students to understand the
+dynamic relationship between the local, national
+and international economic situation.
+The Three Strands of Junior Cycle Business Studies:<br>
+● Takes place at the end of the first term in third
+year over a three week period.<br>
+● Individual presentation of 3 minute duration.<br>
+● Provides an opportunity for students to apply
+their knowledge, skills and understanding to
+real life settings while also developing their
+communication skills.<br>
+After completion of each CBA, a Subject Learning
+and Assessment Review (SLAR) meeting takes
+place to discuss student learning and share
+effective practice.<br>
+<strong>Assessment Task</strong><br>
+● Following the second Classroom-Based
+Assessment in third year students complete a
+reflective Assessment Task.<br>
+● The Assessment Task is assessed by the State
+Examinations Commission (SEC). It will be
+allocated 10% of the marks used to determine
+the final examination grade awarded by the
+SEC.
+<br>
+<strong>Final Examination</strong><br>
+● Takes place at the end of third year as normal,
+and is set and assessed by the SEC.<br>
+● One examination paper offered at common
+level. <br>
+● Maximum of two hours in duration.</p><br>
+	<center><img class="round" src="Info-Leaflet.PNG" width="500" height="500"></center><br>
+	<center><img class="round" src="Business2.PNG" width="500" height="500"><br></center>
+</div> <!-- This is the end of our 3rd Divider -->
+	
+<div class="container-fluid bg-5 text-center">  
+		<br>
+	<h3>Leaving Certificate Business Studies Subjetcs: Accounting, Economics and Business</h3>
+	<p> What the Subjects are all about? </p>
+	<p><strong>Economics:</strong><br>Leaving Certificate economics provides students with the knowledge and skills necessary for understanding how the Irish and global economy functions. 
+The learning experiences in economics develop students’ critical thinking, problem solving, decision-making and numeracy skills. 
+Economics provides students with a learning foundation for a wide range of careers in business, economics, finance, enterprise and management.
+<br><strong>The Course:</strong><br> The subject is concerned with understanding the workings of a modern economy from both Macro and Micro level. Leaving Cert economics consists of eight main examination question areas:
+<br>
+Subject Content:
+<br>
+Demand, supply, equilibrium, utility and elasticity
+Costs and market structures
+Factors of production (including economists)
+National income and the multiplier
+Inflation, money, banking and monetary policy
+International trade, balance of payments and the euro
+Fiscal policy and taxation
+The Government in the economy (including economic development and growth, population and emigration)
+Separate questions on elasticity and costs are also possible, and questions on broader topics such as the national income, Government policy - the list above is just a general guide
+There are no projects, practical aspects, field trips, etc. Teacher may include project work but it is not a requirement of the syllabus.
+There is a common syllabus covering Higher and Ordinary level, which will fulfil the aims and objectives.
+ </p>
+<p><strong>Accounting:</strong><br>Leaving Certificate accounting provides students with the knowledge, understanding and skills in accounting and financial management necessary for managing personal and basic company accounts. 
+The learning experiences in accounting develop students’ organisational, logical thinking, planning and problem-solving skills for their future life, work and study. It also develops their numeracy skills within the context of business and enterprise.
+<br><strong>The Course:</strong><br> Topics covered include: Financial Statements Preparation, Farm Accounts, Club Accounts, Company Accounts, Manufacturing Accounts, Financial Statements Analysis and Interpretation, Budgeting, Break-even Analysis, Cost Classification, Accounting Theory and Principles. </p>
+<p><strong>Business:</strong><br>Leaving Certificate business creates an awareness of the importance of business activity and develops a positive and ethical attitude towards enterprise. 
+The learning experiences in business develop students’ critical thinking, creative and organisational skills while enhancing literacy and numeracy skills using real-life examples. Business provides students with a learning foundation for a wide range of careers in business, marketing, law, enterprise and management.
+<br><strong>The Course:</strong><br>This subject is concerned with understanding the environment in which business operates in Ireland and in the wider world. 
+It also involves equipping the students with a positive view of enterprise and its applications in the business environment, in both the public and private sectors. 
+There are 7 core units covering the following topics: Introduction to people in business; Enterprise; Managing 1 & 2; Business in action; Domestic Environment and International Environment. 
+There is a common syllabus covering Higher and Ordinary level, which will fulfil the aims and objectives of the course. 
+A flexibility of design that caters for present day Irish business education and yet is capable of adaptation to future developments in a structured and efficient way. 
+It assists students to develop their education for adult and working life including the creation of positive attitudes towards self-employment. 
+From time to time there may be field trips or guest speakers where the course allows.  These are not a compulsory part of the course and are organised at the teachers’ discretion. </p>
+<br><br>
+	
+	<p>Teacher Statement about the Senior Cycle Course:</p>
+	
+		<br>
+	
+	<p>Helpful information from Teachers about the Subjects:  <br>        </p>
+	
+	<br>
+	
+	</div>
+	
+	<div class="container-fluid bg-6 text-center">  
+	
+	<h3>Resources for Students and Parents:</h3>
+	<A NAME="resource"></A>
+	<br>
+	<p>Final Accounts and Balance Sheet Help for Students:</p><br>
+	<p style="font-size:16px;">This Simulation of a full Trading, Profit, and Loss Apppropiation Account and Balance Sheet for Higher level Junior Cycle Business Studies 
+	<iframe src="https://trinket.io/embed/python3/6815aa00c4?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	<br><p>Important Business Key Terms, Course Topics, Theory and Basics:</p><br>
+	<iframe src="https://trinket.io/embed/python/62188cf303?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+	
+<!--<iframe src="https://trinket.io/embed/python3/62188cf303" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>  -->
+<br>
+<!-- http://www.bstai.ie/2013/11/14/refreshers-guide-to-double-entry-bookkeeping/  and  http://www.bstai.ie/2012/10/15/graphic-organisers-for-business-studies/ -->
+<br>
+	
+<h3>Excel Spreadsheets and Calculations for Accounts in Business Studies</h3><br>
+		<br>
+		<iframe src="https://onedrive.live.com/embed?cid=B8E6127BF6F4CBA9&resid=B8E6127BF6F4CBA9%213716&authkey=ABXKYDklQ7P80wc&em=2" width="402" height="346" frameborder="0" scrolling="no"></iframe>
+		<br>
+	<h3>Graphics Organiser and Study Skills for Students/Teachers:</h3>  <!-- This is the section where we are going to add a multitude ofresources, documents, interactive digital material and oher itmes for students tousein Business class on a daily basis -->
+	<br>
+	<p><a href="http://www.bstai.ie/education/junior-cert/business-studies/">Business Studies Help</a><br>
+	<a href="http://www.pdst.ie/sites/default/files/Graphic%20Organiser.pdf">Graphics Organisers for Business Studies</a><br>
+	<a href="http://www.bstai.ie/2013/11/14/refreshers-guide-to-double-entry-bookkeeping/">Bookkeeping and Double Entry</a><br>
+	<a href="http://www.bstai.ie/2012/10/15/graphic-organisers-for-business-studies/">Business Studies Smart Learning Methods</a><br>
+	<a href="http://www.tonybuzan.com/about/mind-mapping/"> How to Make Mind Maps!</a></p>
+	<br><br>
+
+		<center><img class="round" src="https://x78251kcpll2l2t9e46kf96a-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/Web-Plain-1024x699.png" width="500" height="500"></center>
+		<br>
+		<h3>Digital Learning and Education that is group-based and interactive in our school!</h3>
+		<ul>
+			
+  		<li>Online Flashcards</li>
+  		<p>Like Quizlet and Chegg Cards....</p>
+  		<iframe src="https://quizlet.com/183418522/flashcards/embed" height="500" width="100%" style="border:0"></iframe>
+ 		<br>
+
+		<li>Quizzes</li>
+		
+  		<li>Mind-Maps</li>
+		
+		<li>Word Clouds</li>
+		
+		<li>Prezi Presentations</li>
+		
+		<li>Interactive Worksheets</li>
+		<br>
+		<iframe src="//www.slideshare.net/slideshow/embed_code/key/MK0F1KegzekrdF" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+		
+		<li>Brainstorm Discussions</li>
+		
+		</ul>  
+	
+		<h3>Information on Personal Enterprise and Consumer Affairs:</h3>
+		<br><br>
+		
+	</div> <!--End of Divider No. 6 -->
+	
+	<div class="container-fluid bg-7 text-center">  
+	
+		<A NAME="news"></A>
+		<!-- <iframe src="https://www.irishtimes.com/business/business-news" width="750" height="500" ></iframe> -->
+		
+	<br><br>
+	<h3>Real-Time, Live Information on Current EUR->GBP Currency Market:</h3>
+		<br>
+	<center><img class="round" src="Currency.PNG" width="750" height="500"><br></center>
+		<br<br>
+		<h3>Teacher Statement for Junior Cycle Business Studies:</h3>
+		<p>   </p>
+		
+		
+		<br>
+	</div>
+		<!-- <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://521historynotes.weebly.com/uploads/1/7/6/4/17649597/2009725_orig.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://x78251kcpll2l2t9e46kf96a-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/Web-Plain-1024x699.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://www.apsi.edu.au/wp-content/uploads/using-mind-maps.gif" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+
+		
+ -->
+	
+	<div class="container-fluid bg-5 text-center">  
+	
+				<h1>Glossary of Definitions:</h1>
+	<p>CBA: Classroom Based Assessment -> An Activity that is part of the State Examinations,that is completed in the Classroom<br>
+	Enterprise: Set-Up by an Individual who used the Factors of Production -> A Business or Company formed by an Entrepreneur<br>
+		APR: Annual Percentage Rate -> The Interest Rate for Credit Purchasing<br>
+		CAD: Computer-Aided-Design -> When IT Software is used in the creation of Product Design </p>
+		<br>
+		<h1>Testomonials from Students:</h1>
+				<br>
+				</div>
+	
+	<!-- We are using Javascript to create a  Quote Generator. This can updated and changed around using other funcions available via JS, which islike a text-based program for Web Design -->
+	
+	<script>
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+	
+	<SCRIPT LANGUAGE="JAVASCRIPT">  
+<!-- // Our JS Code, to create a Random Quote Generator
+var r_text = new Array (); 
+r_text[0] = "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.";
+r_text[1] = "We're all working together; that's the secret."; 
+r_text[2] = "Ideas pull the trigger, but instinct loads the gun.";
+r_text[3] = "Effort only fully releases its reward after a person refuses to quit.";
+r_text[3] = "Great things in business are never done by one person. They're done by a team of people."; 	
+r_text[4] = "Success is not final; failure is not fatal: It is the courage to continue that counts."; 
+r_text[5] = "Opportunities don't happen. You create them."; 
+r_text[6] = "I find that the harder I work, the more luck I seem to have."; 
+
+
+var i = Math.floor(r_text.length * Math.random()); 
+document.write("<br /><br /><br /><br /><center><FONT SIZE=40><FONT COLOR='#FFFFFF'>" + 
+r_text[i]  + "</FONT></center><br />"); 
+
+		// To add extra quotes from Business Websites online for our page.... 
+		
+		</SCRIPT LANGUAGE="JAVASCRIPT">
+		 		
+<footer class="container-fluid bg-4 text-center">
+	<a href="https://docs.google.com/forms/d/1pvIEfZQQPgvluUG2jau_Ukr_kjBAyGqRGxUnRbEQqZ8/viewform?edit_requested=true">Take our Survey NOW!</a>
+ <p>Created by:<br>Daniel O'Brien and Samuel Oladimeji<br>Junior Certificate Coding Short-Course CBA 2018<br>St. Joseph's Secondary School, Rush Co. Dublin</p>
+<div align="center">
+ <select color: blue;>
+  <option value="parent">Parent</option>
+  <option value="teacher">Teacher</option>
+  <option value="student">Student</option>
+
+</select>
+		<button color: black; onclick="myFunction()">Show Info</button>
+
+<div font-family: Georgia;  id="snackbar">Welcome to Business Studies at STJRush</div>
+</div>
+
+<img src="https://www.reliablecounter.com/count.php?page=stjrush.github.io/Business-Studies/web.html&digit=style/plain/10/&reloads=0" alt="" title="" border="0">
+</footer>
+</body>
+</html>
+<!-- Thank You for viewing our website, and I hope you enjoyed it! -->
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
